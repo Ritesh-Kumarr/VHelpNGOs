@@ -39,16 +39,24 @@
     letter-spacing: 1px;
     text-align: left;
   }
-  .but{
-    color: #6a6b6a;
-    font-family: Raleway,Sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 24px;
-    letter-spacing: 1px;
-    text-align: left;
 
+  .donate-button>button{
+    background-color: #f1c675;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .form-2{
+    display: flex;
+    flex-direction: column;
+    /*width: 35%;*/
+    background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  .form-2>button{
+    width: 20%;
+    margin-top: 20px;
   }
 </style>
 <body class="con">
@@ -66,7 +74,7 @@
       <!--                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
       <!--            </li>-->
       <li class="nav-item active">
-        <a class="nav-link" href="donations.html">Donations <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="donations.html">Donate <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
@@ -104,36 +112,25 @@
       <h6 class="con1">riteshkumarrk1085@gmail.com</h6>
     </div>
 
-
     <div class="col con2">
       <h5><strong>Help Desk</strong></h5>
       <h6>For any grievance, suggestions and queries kindly write to us.</h6>
-      <form>
-        <label>Name:</label>
+      <form action="https://formsubmit.co/riteshkumarrk1085@gmail.com" method="POST" class="form-2">
+        <i class="fa-solid fa-xmark" style="text-align: right; cursor: pointer;"></i>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
         <br>
-        <input type="text" name="Enter your name" size="15">
+        <label for="ph_no">Phone Number</label>
+        <input type="text" id="ph_no" name="Phone_num" required>
         <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
         <br>
-        <label>Phone:</label>
-        <br>
-        <input type="text" name="Enter your contact number" size="15">
-        <br>
-        <br>
-        <label>Email:</label>
-        <br>
-        <input type="text" name="Enter your email" size="15">
-        <br>
-        <br>
-        <label>Queries:</label>
-        <br>
-        <textarea cols="50" rows="5" value="Message"></textarea>
-        <br>
-        <br>
-        <input class="but" type="submit" value="Submit">
+        <label for="addr">QUERIES</label>
+        <textarea id="addr" rows="4" cols="50" name="address" required></textarea>
+        <button type="submit">Submit</button>
       </form>
-
     </div>
-
   </div>
 </div>
 
